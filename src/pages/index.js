@@ -149,14 +149,13 @@ class Homepage extends React.Component {
               Kamal Deiratany
             </t.H1>
             <t.LargeP align="center" max45>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Technology Consultant - Social Entrepreneur - Coder
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
               Hire me
             </HireMe>
           </AboveFold>
-          <Content>
+          {/* <Content>
             <t.H2 primary align="center" bold>
               Lorem ipsum
             </t.H2>
@@ -168,8 +167,8 @@ class Homepage extends React.Component {
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
             </t.H2>
-          </Content>
-          <Block>
+          </Content> */}
+          {/* <Block>
             <BlockContent>
               <DivWrapper>
                 <ItemImage src={Placeholder} alt="Placeholder title" />
@@ -198,8 +197,8 @@ class Homepage extends React.Component {
                 <ItemImage src={Placeholder} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
-          </Block>
-          <Block>
+          </Block> */}
+          {/* <Block>
             <BlockContent>
               <DivWrapper>
                 <ItemImage src={Placeholder} alt="Placeholder title" />
@@ -213,8 +212,8 @@ class Homepage extends React.Component {
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
-          </Block>
-          <Block>
+          </Block> */}
+          {/* <Block>
             <BlockContent>
               <DivWrapper>
                 <t.H2 bold>Placeholder website</t.H2>
@@ -228,7 +227,7 @@ class Homepage extends React.Component {
                 <ItemImage src={Placeholder} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
-          </Block>
+          </Block> */}
           <WorkWithMe>
             <t.H1 green>Get in touch with me</t.H1>
             <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
