@@ -144,7 +144,7 @@ class Homepage extends React.Component {
       <HomepageWrapper>
         <Layout theme="white" bigFooter openContactPopup={this.openContactPopup}>
           <AboveFold>
-            <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Name Surname" className="avatar" />
+            <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Kamal Deiratany" className="avatar" />
             <t.H1 primary align="center">
               Kamal Deiratany
             </t.H1>
