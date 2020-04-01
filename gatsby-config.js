@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Kamal Deiratany - Portfolio'
+    //title: 'Kamal Deiratany - Portfolio'
+    title: 'Cleveland.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
