@@ -50,7 +50,7 @@ const AboutMeWrapper = styled.div`
     }
   }
   .avatar {
-    max-width: 400px;
+    max-width: 300px;
     width: 80%;
     margin: 0 auto 100px auto;
     border-radius: 50%;
@@ -84,14 +84,11 @@ class AboutMe extends React.Component {
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
             <t.H1 green align="center">
-              Sign up for your private event
+              It's April FOOLS you FOOL!!!
             </t.H1>
-            <t.LargeP align="center" max70>
-              Technology Consultant - Social Entrepreneur - Coder TEST
-            </t.LargeP>
           </AboveFold>
           <Content>
-            <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="Kamal Deiratany" className="avatar" />
+            <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="Prank" className="avatar" />
           </Content>
         </Layout>
         <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
@@ -104,7 +101,7 @@ export default AboutMe;
 
 export const pageQuery = graphql`
   query {
-    avatarAbout: file(relativePath: { eq: "avatar.jpg" }) {
+    avatarAbout: file(relativePath: { eq: "punked.JPG" }) {
       ...fluidImage
     }
   }
