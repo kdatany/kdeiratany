@@ -79,12 +79,13 @@ const HomepageWrapper = styled.div`
     margin: 0 0 20px 0;
   }
   .avatar {
-    max-width: 200px;
-    width: 80%;
-    margin: 0 auto 50px auto;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 40px auto;
     border-radius: 50%;
     display: block;
-    ${media.tablet`max-width: 70%;`}
+    ${media.tablet`max-width: 100%;`}
   }
   .link {
     padding: 0;
