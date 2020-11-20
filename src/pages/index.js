@@ -11,6 +11,10 @@ import Colors from '../Colors';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { darken } from 'polished';
+import WTT from '../images/WTT.png';
+import TETA from '../images/teta.png';
+import POWER from '../images/powerautomate.jpg';
+import UPWORK from '../images/upwork.jpg';
 
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
@@ -150,36 +154,52 @@ class Homepage extends React.Component {
               Kamal Deiratany
             </t.H1>
             <t.LargeP align="center" max45>
-              Technology Consultant - Social Entrepreneur - Coder
+              Technology Consultant - Social Entrepreneur - Developer
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
               Hire me
             </HireMe>
           </AboveFold>
-          {/* <Content>
-            <t.H2 primary align="center" bold>
-              Lorem ipsum
-            </t.H2>
-            <t.P align="center" max70 className="who-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.
-            </t.P>
-            <t.H2 primary align="center" bold className="portfolio">
-              Portfolio
-            </t.H2>
-          </Content> */}
-          {/* <Block>
+          {
+            <Content>
+              <t.H2 primary align="center" bold>
+                About me
+              </t.H2>
+              <t.P align="center" max70 className="who-desc">
+                I am an entrepreneur & developer with an emphasis in Microsoft Power Platform tools automation and
+                development. In 2016 I started my career as a User Experience Engineer leading the roll out of Office
+                365 to over 40,000 employees in a Fortune 20 company. After that I moved to development and founded my
+                first startup where I continued working on automation projects using Power Automate and other Office 365
+                Power Services. After improving my technical skills, I went back to become a full time Microsoft
+                Engineer helping clients with existing Office 365 licenses automate using Power Automte. Let's not
+                forget, I'm a graduate of THE Ohio State University.
+              </t.P>
+              <t.H2 primary align="center" bold className="portfolio">
+                Portfolio
+              </t.H2>
+            </Content>
+          }
+          <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={UPWORK} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="#">
-                  Lorem ipsum
+                <t.H2 bold>Consluting and Productivity</t.H2>
+                <t.P>
+                  I'm an IT and Productivity consultant with over 4 years working with Startups, small, and large
+                  business. I help clients become more productive in their daily tasks and operations.
+                </t.P>
+                <t.P>Upwork is the main platform I use where clients connect with me to help with projects.</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
+                  target="_blank"
+                  href="https://www.upwork.com/o/profiles/users/~01cf973f0d362e19ca/"
+                >
+                  Hire me on Upwork.
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -187,48 +207,65 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="#">
+                <t.H2 bold>Development and Automation</t.H2>
+                <t.P>
+                  I'm now focusing on working with Power Platform tools, delivering projects for a fortune 20 company
+                  and other clients on Upwork. I also build business applications using Power Apps and visualize data
+                  using PowerBI.{' '}
+                </t.P>
+                <t.P>
+                  One of my most recent projects is building an inventory management system for a startup. I used
+                  SharePoint Lists for data repository, Forms to request inventory, and Power Automate flows running in
+                  between to keep everything updated. Saved my clients over $50k in purchasing a software.{' '}
+                </t.P>
+                {/* <LinkButton primary bold className="link" as="a" target="_blank" href="#">
                   Lorem ipsum
-                </LinkButton>
+                </LinkButton> */}
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={POWER} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
-          </Block> */}
-          {/* <Block>
+          </Block>
+          <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={TETA} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="#">
-                  Lorem ipsum
+                <t.H2 bold>Teta Pita</t.H2>
+                <t.P>
+                  A new family owned catering business founded in early 2020 in the Columbus area. Instead of taking
+                  orders over the phone, this website helped Teta Pita scale to allow online ordering.{' '}
+                </t.P>
+                <t.P> </t.P>
+                <LinkButton primary bold className="link" as="a" target="_blank" href="https://tetapita.com">
+                  Visit TetaPita.com
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
-          </Block> */}
-          {/* <Block>
-            <BlockContent>
-              <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="#">
-                  Lorem ipsum
-                </LinkButton>
-              </DivWrapper>
-              <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
-              </DivWrapper>
-            </BlockContent>
-          </Block> */}
+          </Block>
+          {
+            <Block>
+              <BlockContent>
+                <DivWrapper>
+                  <t.H2 bold>Wild Tiger Tees</t.H2>
+                  <t.P>
+                    <a href="https://socialventurescbus.com/marketplace/wild-tiger-tees/">Wild Tiger Tees </a>
+                    was started at a GiveBackHack event back in 2018 with the goal of employing youth facing
+                    homelessness in the Columbus area.
+                  </t.P>
+                  {/* <t.P>Dolor sit amet</t.P> */}
+                  <LinkButton primary bold className="link" as="a" target="_blank" href="https://wildtigertees.com">
+                    Website
+                  </LinkButton>
+                </DivWrapper>
+                <DivWrapper>
+                  <ItemImage src={WTT} alt="WildTigerTees" />
+                </DivWrapper>
+              </BlockContent>
+            </Block>
+          }
           <WorkWithMe>
             <t.H1 green>Get in touch with me</t.H1>
             <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
