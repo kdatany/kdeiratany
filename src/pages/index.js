@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
-import Placeholder from '../images/placeholder.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -191,16 +190,19 @@ class Homepage extends React.Component {
                   business. I help clients become more productive in their daily tasks and operations.
                 </t.P>
                 <t.P>Upwork is the main platform I use where clients connect with me to help with projects.</t.P>
-                <LinkButton
-                  primary
-                  bold
-                  className="link"
-                  as="a"
-                  target="_blank"
-                  href="https://www.upwork.com/o/profiles/users/~01cf973f0d362e19ca/"
-                >
-                  Hire me on Upwork.
-                </LinkButton>
+                <t.P>
+                  Send me a work proposal via Upwork (
+                  <LinkButton
+                    primary
+                    bold
+                    className="link"
+                    as="a"
+                    target="_blank"
+                    href="https://www.upwork.com/ab/flservices/cl/public/org/1294052489068167169"
+                  >
+                    Direct contract).
+                  </LinkButton>
+                </t.P>
               </DivWrapper>
             </BlockContent>
           </Block>

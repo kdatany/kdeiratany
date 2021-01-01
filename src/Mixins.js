@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
-import Colors from './Colors';
+import { css } from 'styled-components';
+// import Colors from './Colors';
 import * as t from './Typography';
-import { media } from './MediaQueries';
+// import { media } from './MediaQueries';
 
 export const center = css`
   display: block;
