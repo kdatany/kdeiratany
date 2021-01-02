@@ -82,13 +82,12 @@ const HomepageWrapper = styled.div`
     margin: 0 0 20px 0;
   }
   .avatar {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto 40px auto;
+    max-width: 200px;
+    width: 80%;
+    margin: 0 auto 50px auto;
     border-radius: 50%;
     display: block;
-    ${media.tablet`max-width: 100%;`}
+    ${media.tablet`max-width: 70%;`}
   }
   .link {
     padding: 0;
@@ -145,139 +144,141 @@ class Homepage extends React.Component {
     const { openHireMePopup } = this.state;
     const { data } = this.props;
     return (
-      <HomepageWrapper>
-        <Layout theme="white" bigFooter openContactPopup={this.openContactPopup}>
-          <AboveFold>
-            <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Kamal Deiratany" className="avatar" />
-            <t.H1 primary align="center">
-              Kamal Deiratany
-            </t.H1>
-            <t.LargeP align="center" max45>
-              Technology Consultant - Social Entrepreneur - Developer
-            </t.LargeP>
-            <HireMe large onClick={this.openContactPopup} book>
-              Hire me
-            </HireMe>
-          </AboveFold>
-          {
-            <Content>
-              <t.H2 primary align="center" bold>
-                About me
-              </t.H2>
-              <t.P align="center" max70 className="who-desc">
-                I am an entrepreneur & developer with an emphasis in Microsoft Power Platform tools automation and
-                development. In 2016 I started my career as a User Experience Engineer leading the roll out of Office
-                365 to over 40,000 employees in a Fortune 20 company. After that I moved to development and founded my
-                first startup where I continued working on automation projects using Power Automate and other Office 365
-                Power Services. After improving my technical skills, I went back to become a full time Microsoft
-                Engineer helping clients with existing Office 365 licenses automate using Power Automte. Let's not
-                forget, I'm a graduate of THE Ohio State University.
-              </t.P>
-              <t.H2 primary align="center" bold className="portfolio">
-                Portfolio
-              </t.H2>
-            </Content>
-          }
-          <Block>
-            <BlockContent>
-              <DivWrapper>
-                <ItemImage src={UPWORK} alt="Placeholder title" />
-              </DivWrapper>
-              <DivWrapper>
-                <t.H2 bold>Consluting and Productivity</t.H2>
-                <t.P>
-                  I'm an IT and Productivity consultant with over 4 years working with Startups, small, and large
-                  business. I help clients become more productive in their daily tasks and operations.
+      <>
+        <HomepageWrapper>
+          <Layout theme="white" bigFooter openContactPopup={this.openContactPopup}>
+            <AboveFold>
+              <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Kamal Deiratany" className="avatar" />
+              <t.H1 primary align="center">
+                Kamal Deiratany
+              </t.H1>
+              <t.LargeP align="center" max45>
+                Technology Consultant - Social Entrepreneur - Developer
+              </t.LargeP>
+              <HireMe large onClick={this.openContactPopup} book>
+                Hire me
+              </HireMe>
+            </AboveFold>
+            {
+              <Content>
+                <t.H2 primary align="center" bold>
+                  About me
+                </t.H2>
+                <t.P align="center" max70 className="who-desc">
+                  I am an entrepreneur & developer with an emphasis in Microsoft Power Platform tools automation and
+                  development. In 2016 I started my career as a User Experience Engineer leading the roll out of Office
+                  365 to over 40,000 employees in a Fortune 20 company. After that I moved to development and founded my
+                  first startup where I continued working on automation projects using Power Automate and other Office
+                  365 Power Services. After improving my technical skills, I went back to become a full time Microsoft
+                  Engineer helping clients with existing Office 365 licenses automate using Power Automte. Let's not
+                  forget, I'm a graduate of THE Ohio State University.
                 </t.P>
-                <t.P>Upwork is the main platform I use where clients connect with me to help with projects.</t.P>
-                <t.P>
-                  Send me a work proposal via Upwork (
-                  <LinkButton
-                    primary
-                    bold
-                    className="link"
-                    as="a"
-                    target="_blank"
-                    href="https://www.upwork.com/ab/flservices/cl/public/org/1294052489068167169"
-                  >
-                    Direct contract).
-                  </LinkButton>
-                </t.P>
-              </DivWrapper>
-            </BlockContent>
-          </Block>
-          <Block>
-            <BlockContent>
-              <DivWrapper>
-                <t.H2 bold>Development and Automation</t.H2>
-                <t.P>
-                  I'm now focusing on working with Power Platform tools, delivering projects for a fortune 20 company
-                  and other clients on Upwork. I also build business applications using Power Apps and visualize data
-                  using PowerBI.{' '}
-                </t.P>
-                <t.P>
-                  One of my most recent projects is building an inventory management system for a startup. I used
-                  SharePoint Lists for data repository, Forms to request inventory, and Power Automate flows running in
-                  between to keep everything updated. Saved my clients over $50k in purchasing a software.{' '}
-                </t.P>
-                {/* <LinkButton primary bold className="link" as="a" target="_blank" href="#">
-                  Lorem ipsum
-                </LinkButton> */}
-              </DivWrapper>
-              <DivWrapper>
-                <ItemImage src={POWER} alt="Placeholder title" />
-              </DivWrapper>
-            </BlockContent>
-          </Block>
-          <Block>
-            <BlockContent>
-              <DivWrapper>
-                <ItemImage src={TETA} alt="Placeholder title" />
-              </DivWrapper>
-              <DivWrapper>
-                <t.H2 bold>Teta Pita</t.H2>
-                <t.P>
-                  A new family owned catering business founded in early 2020 in the Columbus area. Instead of taking
-                  orders over the phone, this website helped Teta Pita scale to allow online ordering.{' '}
-                </t.P>
-                <t.P> </t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="https://tetapita.com">
-                  Visit TetaPita.com
-                </LinkButton>
-              </DivWrapper>
-            </BlockContent>
-          </Block>
-          {
+                <t.H2 primary align="center" bold className="portfolio">
+                  Portfolio
+                </t.H2>
+              </Content>
+            }
             <Block>
               <BlockContent>
                 <DivWrapper>
-                  <t.H2 bold>Wild Tiger Tees</t.H2>
-                  <t.P>
-                    <a href="https://socialventurescbus.com/marketplace/wild-tiger-tees/">Wild Tiger Tees </a>
-                    was started at a GiveBackHack event back in 2018 with the goal of employing youth facing
-                    homelessness in the Columbus area.
-                  </t.P>
-                  {/* <t.P>Dolor sit amet</t.P> */}
-                  <LinkButton primary bold className="link" as="a" target="_blank" href="https://wildtigertees.com">
-                    Website
-                  </LinkButton>
+                  <ItemImage src={UPWORK} alt="Placeholder title" />
                 </DivWrapper>
                 <DivWrapper>
-                  <ItemImage src={WTT} alt="WildTigerTees" />
+                  <t.H2 bold>Consluting and Productivity</t.H2>
+                  <t.P>
+                    I'm an IT and Productivity consultant with over 4 years working with Startups, small, and large
+                    business. I help clients become more productive in their daily tasks and operations.
+                  </t.P>
+                  <t.P>Upwork is the main platform I use where clients connect with me to help with projects.</t.P>
+                  <t.P>
+                    Send me a work proposal via Upwork (
+                    <LinkButton
+                      primary
+                      bold
+                      className="link"
+                      as="a"
+                      target="_blank"
+                      href="https://www.upwork.com/ab/flservices/cl/public/org/1294052489068167169"
+                    >
+                      Direct contract).
+                    </LinkButton>
+                  </t.P>
                 </DivWrapper>
               </BlockContent>
             </Block>
-          }
-          <WorkWithMe>
-            <t.H1 green>Get in touch with me</t.H1>
-            <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
-            <HireMe onClick={this.openContactPopup} book>
-              Contact me
-            </HireMe>
-          </WorkWithMe>
-        </Layout>
-        <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
-      </HomepageWrapper>
+            <Block>
+              <BlockContent>
+                <DivWrapper>
+                  <t.H2 bold>Development and Automation</t.H2>
+                  <t.P>
+                    I'm now focusing on working with Power Platform tools, delivering projects for a fortune 20 company
+                    and other clients on Upwork. I also build business applications using Power Apps and visualize data
+                    using PowerBI.{' '}
+                  </t.P>
+                  <t.P>
+                    One of my most recent projects is building an inventory management system for a startup. I used
+                    SharePoint Lists for data repository, Forms to request inventory, and Power Automate flows running
+                    in between to keep everything updated. Saved my clients over $50k in purchasing a software.{' '}
+                  </t.P>
+                  {/* <LinkButton primary bold className="link" as="a" target="_blank" href="#">
+                  Lorem ipsum
+                </LinkButton> */}
+                </DivWrapper>
+                <DivWrapper>
+                  <ItemImage src={POWER} alt="Placeholder title" />
+                </DivWrapper>
+              </BlockContent>
+            </Block>
+            <Block>
+              <BlockContent>
+                <DivWrapper>
+                  <ItemImage src={TETA} alt="Placeholder title" />
+                </DivWrapper>
+                <DivWrapper>
+                  <t.H2 bold>Teta Pita</t.H2>
+                  <t.P>
+                    A new family owned catering business founded in early 2020 in the Columbus area. Instead of taking
+                    orders over the phone, this website helped Teta Pita scale to allow online ordering.{' '}
+                  </t.P>
+                  <t.P> </t.P>
+                  <LinkButton primary bold className="link" as="a" target="_blank" href="https://tetapita.com">
+                    Visit TetaPita.com
+                  </LinkButton>
+                </DivWrapper>
+              </BlockContent>
+            </Block>
+            {
+              <Block>
+                <BlockContent>
+                  <DivWrapper>
+                    <t.H2 bold>Wild Tiger Tees</t.H2>
+                    <t.P>
+                      <a href="https://socialventurescbus.com/marketplace/wild-tiger-tees/">Wild Tiger Tees </a>
+                      was started at a GiveBackHack event back in 2018 with the goal of employing youth facing
+                      homelessness in the Columbus area.
+                    </t.P>
+                    {/* <t.P>Dolor sit amet</t.P> */}
+                    <LinkButton primary bold className="link" as="a" target="_blank" href="https://wildtigertees.com">
+                      Website
+                    </LinkButton>
+                  </DivWrapper>
+                  <DivWrapper>
+                    <ItemImage src={WTT} alt="WildTigerTees" />
+                  </DivWrapper>
+                </BlockContent>
+              </Block>
+            }
+            <WorkWithMe>
+              <t.H1 green>Get in touch with me</t.H1>
+              <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
+              <HireMe onClick={this.openContactPopup} book>
+                Contact me
+              </HireMe>
+            </WorkWithMe>
+          </Layout>
+          <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
+        </HomepageWrapper>
+      </>
     );
   }
 }
