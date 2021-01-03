@@ -167,10 +167,10 @@ class Homepage extends React.Component {
                 <t.P align="center" max70 className="who-desc">
                   I am an entrepreneur & developer with an emphasis in Microsoft Power Platform tools automation and
                   development. In 2016 I started my career as a User Experience Engineer leading the roll out of Office
-                  365 to over 40,000 employees in a Fortune 20 company. After that I moved to development and founded my
-                  first startup where I continued working on automation projects using Power Automate and other Office
-                  365 Power Services. After improving my technical skills, I went back to become a full time Microsoft
-                  Engineer helping clients with existing Office 365 licenses automate using Power Automte. Let's not
+                  365 to over 40,000 employees at Cardinal Health, a Fortune 20 company. After that I moved to
+                  development and founded my first startup where I continued working on automation projects using Power
+                  Automate and other Office 365 Power Services. After improving my technical skills, I went back to
+                  become a full time Microsoft Engineer helping clients automate tasks using Power Automte. Let's not
                   forget, I'm a graduate of THE Ohio State University.
                 </t.P>
                 <t.H2 primary align="center" bold className="portfolio">
