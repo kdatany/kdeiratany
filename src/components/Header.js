@@ -248,11 +248,11 @@ class Header extends React.Component {
               <Burger onClick={this.handleClose}>
                 <img alt="Close menu" src={Close} />
               </Burger>
-              <li>
+              {/* <li>
                 <Button theme={theme} to="about-me">
                   About me
                 </Button>
-              </li>
+              </li> */}
               <li>
                 <HireMe theme={theme} onClick={this.openContactPopup} book>
                   Contact me

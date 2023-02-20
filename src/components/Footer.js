@@ -19,7 +19,7 @@ const Footer = ({ big, medium }) => (
   <FooterWrapper {...big && { big }} {...medium && { medium }}>
     <Content>
       <Copyright white align="center">
-        © Kamal Deiratany 2020. All rights reserved.
+        © Kamal Deiratany 2023. All rights reserved.
       </Copyright>
     </Content>
   </FooterWrapper>

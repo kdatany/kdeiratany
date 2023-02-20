@@ -14,6 +14,7 @@ import WTT from '../images/WTT.png';
 import TETA from '../images/teta.png';
 import POWER from '../images/powerautomate.jpg';
 import UPWORK from '../images/upwork.jpg';
+import DELOITTE from '../images/DELOITTE.png';
 
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
@@ -155,9 +156,9 @@ class Homepage extends React.Component {
               <t.LargeP align="center" max45>
                 Technology Consultant - Social Entrepreneur - Developer
               </t.LargeP>
-              <HireMe large onClick={this.openContactPopup} book>
+              {/* <HireMe large onClick={this.openContactPopup} book>
                 Hire me
-              </HireMe>
+              </HireMe> */}
             </AboveFold>
             {
               <Content>
@@ -165,13 +166,23 @@ class Homepage extends React.Component {
                   About me
                 </t.H2>
                 <t.P align="center" max70 className="who-desc">
-                  I am an entrepreneur & developer with an emphasis in Microsoft Power Platform tools automation and
-                  development. In 2016 I started my career as a User Experience Engineer leading the roll out of Office
-                  365 to over 40,000 employees at Cardinal Health, a Fortune 20 company. After that I moved to
-                  development and founded my first startup where I continued working on automation projects using Power
-                  Automate and other Office 365 Power Services. After improving my technical skills, I went back to
-                  become a full time Microsoft Engineer helping clients automate tasks using Power Automte. Let's not
-                  forget, I'm a graduate of THE Ohio State University.
+                  I'm a Senior Consultant at Deloitte in the Cloud Engineering practice, currently residing in NYC. I
+                  have six years of work experience, with two years in consulting, and I've developed a passion for
+                  entrepreneurship and development, particularly in Microsoft Power Platform tools automation and
+                  development.
+                  <br />
+                  <br />
+                  My career began in 2016 as a User Experience Engineer, where I led the successful implementation of
+                  Office 365 for over 40,000 employees at a Fortune 20 company. After that, I founded my first startup,
+                  where I continued to work on automation projects using Power Automate and other Office 365 Power
+                  Services. With my technical skills honed, I transitioned back to becoming a full-time Microsoft
+                  Engineer, where I help clients automate tasks using Microsoft Power Platform as a certified Power
+                  Platfrom Engineer by Microsoft.
+                  <br />
+                  <br />
+                  My hobbies include skiing, traveling, exploring new restaurants, and listening to podcasts. When I'm
+                  not working, I enjoy pursuing these interests and finding new ways to make people's lives easier using
+                  technology. I'm proud to have graduated from the Ohio State University, class of 2016.
                 </t.P>
                 <t.H2 primary align="center" bold className="portfolio">
                   Portfolio
@@ -181,16 +192,52 @@ class Homepage extends React.Component {
             <Block>
               <BlockContent>
                 <DivWrapper>
+                  <t.H2 bold>Technical Cloud Consulting</t.H2>
+                  <t.P>
+                    As a Senior Consultant on the Deloitte Microsoft Services team, I help clients with implementing and
+                    managing their Microsoft 365 tenants.
+                  </t.P>
+                  <t.P />
+                  <t.P>
+                    Learn more about the &nbsp;
+                    <LinkButton
+                      primary
+                      bold
+                      className="link"
+                      as="a"
+                      target="_blank"
+                      href="https://www2.deloitte.com/ce/en/pages/strategy-operations/solutions/cloud-engineering.html"
+                    >
+                      Deloitte Cloud Engineering services.
+                    </LinkButton>
+                  </t.P>
+                </DivWrapper>
+                <DivWrapper>
+                  <ItemImage src={DELOITTE} alt="Placeholder title" />
+                </DivWrapper>
+              </BlockContent>
+            </Block>
+            <Block>
+              <BlockContent>
+                <DivWrapper>
                   <ItemImage src={UPWORK} alt="Placeholder title" />
                 </DivWrapper>
                 <DivWrapper>
-                  <t.H2 bold>Consluting and Productivity</t.H2>
+                  <t.H2 bold>Freelance Support</t.H2>
                   <t.P>
-                    I'm an IT and Productivity consultant with over 4 years working with Startups, small, and large
-                    business. I help clients become more productive in their daily tasks and operations.
+                    As an IT and productivity consultant, I have over four years of experience working with startups,
+                    small businesses, and large corporations to help clients optimize their daily tasks and operations.
+                    I specialize in developing custom software solutions, automating workflows, and streamlining
+                    processes to improve overall productivity.
                   </t.P>
-                  <t.P>Upwork is the main platform I use where clients connect with me to help with projects.</t.P>
                   <t.P>
+                    I primarily work with clients through Upwork, a leading online platform that connects freelancers
+                    with businesses and individuals looking for expert help with projects. Whether you need guidance on
+                    optimizing your team's workflows, developing custom software solutions, or implementing the latest
+                    productivity tools, I'm here to help you achieve your goals and take your business to the next
+                    level.
+                  </t.P>
+                  {/* <t.P>
                     Send me a work proposal via Upwork (
                     <LinkButton
                       primary
@@ -202,7 +249,7 @@ class Homepage extends React.Component {
                     >
                       Direct contract).
                     </LinkButton>
-                  </t.P>
+                  </t.P> */}
                 </DivWrapper>
               </BlockContent>
             </Block>
