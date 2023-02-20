@@ -87,7 +87,7 @@ class AboutMe extends React.Component {
               Kamal Deiratany
             </t.H1>
             <t.LargeP align="center" max70>
-              Technology Consultant - Social Entrepreneur - Coder
+              Technology Consultant - Social Entrepreneur - Programmer
             </t.LargeP>
           </AboveFold>
           <Content>
