@@ -14,7 +14,7 @@ import WTT from '../images/WTT.png';
 import TETA from '../images/teta.png';
 import POWER from '../images/powerautomate.jpg';
 import UPWORK from '../images/upwork.jpg';
-import DELOITTE from '../images/deloitte.png';
+import DELOITTE from '../images/teta.png';
 
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
