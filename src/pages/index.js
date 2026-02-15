@@ -303,7 +303,7 @@ class Homepage extends React.Component {
                   </DivWrapper>
                 </BlockContent>
               </Block>
-            }*/}
+            }
             <WorkWithMe>
               <t.H1 green>Get in touch with me</t.H1>
               <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
@@ -312,7 +312,7 @@ class Homepage extends React.Component {
               </HireMe>
             </WorkWithMe>
           </Layout>
-          <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
+          <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />*/}
         </HomepageWrapper>
       </>
     );
