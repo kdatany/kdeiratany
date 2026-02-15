@@ -165,26 +165,15 @@ class Homepage extends React.Component {
                 <t.H2 primary align="center" bold>
                   About me
                 </t.H2>
-                <t.P align="center" max70 className="who-desc">
-                  I'm a Senior Consultant at Deloitte in the Cloud Engineering practice, currently residing in NYC. I
-                  have six years of work experience, with two years in consulting, and I've developed a passion for
-                  entrepreneurship and development, particularly in Microsoft Power Platform tools automation and
-                  development.
-                  <br />
-                  <br />
-                  My career began in 2016 as a User Experience Engineer, where I led the successful implementation of
-                  Office 365 for over 40,000 employees at a Fortune 20 company. After that, I founded my first startup,
-                  where I continued to work on automation projects using Power Automate and other Office 365 Power
-                  Services. With my technical skills honed, I transitioned back to becoming a full-time Microsoft
-                  Engineer, where I help clients automate tasks using Microsoft Power Platform as a certified Power
-                  Platfrom Engineer by Microsoft.
-                  <br />
-                  <br />
-                  My hobbies include skiing, traveling, exploring new restaurants, and listening to podcasts. When I'm
-                  not working, I enjoy pursuing these interests and finding new ways to make people's lives easier using
-                  technology. I'm proud to have graduated from the Ohio State University, class of 2016.
-                </t.P>
-                <t.H2 primary align="center" bold className="portfolio">
+<t.P align="center" max70 className="who-desc">
+  I’m a Manager at Deloitte with 5 years of technical consulting experience and 10 years in IT and technical roles overall. 
+  I specialize in Microsoft cloud and productivity solutions, helping organizations design, implement, and manage modern workplace environments.
+  <br />
+  <br />
+  I’ve been a long-time Microsoft product enthusiast, with a strong focus on tools that improve collaboration and efficiency. 
+  I graduated from The Ohio State University with a degree in Management Information Systems.
+</t.P>
+{/*     <t.H2 primary align="center" bold className="portfolio">
                   Portfolio
                 </t.H2>
               </Content>
@@ -237,7 +226,7 @@ class Homepage extends React.Component {
                     productivity tools, I'm here to help you achieve your goals and take your business to the next
                     level.
                   </t.P>
-                  {/* <t.P>
+                  <t.P>
                     Send me a work proposal via Upwork (
                     <LinkButton
                       primary
@@ -249,7 +238,7 @@ class Homepage extends React.Component {
                     >
                       Direct contract).
                     </LinkButton>
-                  </t.P> */}
+                  </t.P>
                 </DivWrapper>
               </BlockContent>
             </Block>
@@ -269,7 +258,7 @@ class Homepage extends React.Component {
                   </t.P>
                   {/* <LinkButton primary bold className="link" as="a" target="_blank" href="#">
                   Lorem ipsum
-                </LinkButton> */}
+                </LinkButton> *
                 </DivWrapper>
                 <DivWrapper>
                   <ItemImage src={POWER} alt="Placeholder title" />
@@ -304,7 +293,7 @@ class Homepage extends React.Component {
                       was started at a GiveBackHack event back in 2018 with the goal of employing youth facing
                       homelessness in the Columbus area.
                     </t.P>
-                    {/* <t.P>Dolor sit amet</t.P> */}
+                    <t.P>Dolor sit amet</t.P>
                     <LinkButton primary bold className="link" as="a" target="_blank" href="https://wildtigertees.com">
                       Website
                     </LinkButton>
@@ -314,7 +303,7 @@ class Homepage extends React.Component {
                   </DivWrapper>
                 </BlockContent>
               </Block>
-            }
+            }*/}
             <WorkWithMe>
               <t.H1 green>Get in touch with me</t.H1>
               <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
